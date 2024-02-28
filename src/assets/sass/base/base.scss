@@ -1,0 +1,80 @@
+/*------------------*
+# Base
+*------------------*/
+
+html {
+    box-sizing: border-box;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    line-height: 1.5;
+    overflow-y: scroll;
+    min-height: 100%;
+    word-wrap: break-word;
+}
+
+* {
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+body {
+    align-items: stretch;
+    display: block;
+    font-family: $base-font-family;
+    font-size: $base-font-size;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    min-height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.page-width {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.badge-primary{
+    background-color: $base-color;
+}
+.highlight{
+    color: $base-color;
+}
+.section-header{
+    display: flex;
+    margin-bottom: 60px;
+    h2{
+        margin: 0px;
+        position: relative;
+    }
+    .line{
+        background-color: $color-grey;
+        opacity: 0.1;
+        width: 250px;
+        height: 2px;
+        margin: 0px 30px;
+        transition: 0.5s all;
+    }
+}
+.mb-30{
+    margin-bottom: 80px;
+}
+  
+h3{
+    margin-top: 0 !important;
+    font-size: 18px !important;
+    .highlight{
+      font-weight: 800;
+    }
+}
+p{
+    font-size: 14px  !important;
+}

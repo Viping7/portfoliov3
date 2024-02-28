@@ -1,0 +1,438 @@
+<!-- {% extends "base.html" %} -->
+
+{% block content %}
+<section class="banner">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class=" vh-100 d-flex justify-content-center align-items-center">
+          <div class="banner-content">
+            <h3>Hi, I am</h3>
+            <h1>Vipin Gopinath.</h1>
+            <p>
+              a full stack developer based out of Hyderabad, India,
+              having 8+ years of experience with a passion for creating beautiful,
+              intuitive,and highly crafted solutions combining a considered approach
+              with emerging technologies. I like going through new stuffs which
+              includes tech, games and tv series during my freetime.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 offset-md-2">
+        <div class="vh-100 d-flex justify-content-center align-items-center">
+          <div class="scene">
+            <div class="carousel">
+              <div class="carousel__cell">
+                <img src="images/img-1.jpeg" />
+              </div>
+              <div class="carousel__cell">
+                <img src="images/img-2.jpeg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="dummy-banner vh-100"></section>
+<section class="experience py-20 mb-30">
+  <div class="container">
+    <div class="row">
+      <div class="section-header align-items-center">
+        <h2>I have worked for</h2>
+        <div class="line"></div>
+      </div>
+      <div class="col-md-3">
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+          <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab"
+            aria-controls="v-pills-home" aria-selected="true">Avantgarde GmbH <span
+              class="badge badge-primary">Currently working</span>
+          </a>
+          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab"
+            aria-controls="v-pills-profile" aria-selected="false">Spotcap</a>
+          <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab"
+            aria-controls="v-pills-messages" aria-selected="false">Monocept</a>
+          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab"
+            aria-controls="v-pills-settings" aria-selected="false">F1 Studioz</a>
+          <div class="tab-selector-container">
+            <div class="tab-selector"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+            <h3>Software Engineer <span class="highlight">@ XPAI</span></h3>
+            <h4>Jun 2021 - Present</h4>
+            <ul>
+              <li>Building & maintaing different services across using Nodejs, Angular,
+                React.js Next.js</li>
+              <li>Building & Integrating IOT devices to AWS Greengrass</li>
+              <li>Developing and maintaining infrastructure as code by using AWS CDK</li>
+              <li>Creating CMS for building AR app and worldtracking and trigger binded Node.js ( Express.js, Nest.js )
+                AR Experiences</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+            <h3>Freelance Software Engineer <span class="highlight">@ Spotcap</span></h3>
+            <h4>Jan 2020 - May 2022</h4>
+            <ul>
+              <li>Developed microservice applications using node.js</li>
+              <li>Responsible for maintaining payments system for overdraft processing to/from
+                multiple banks</li>
+              <li>Developed underwriter review dashboard using Node.js & webix UI</li>
+              <li>Building & maintaining customer facing loan request dashboard using React & EJS</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+            <h3>Senior Software Engineer <span class="highlight">@ Monocept</span></h3>
+            <h4>Mar 2018 - Dec 2019</h4>
+            <ul>
+              <li>Responsible for making microservices and monolithic applications
+                using node.js and sails.js</li>
+              <li>Building UI for insurance portal using Angular</li>
+              <li>Debugging & Bug fixes for a visual database design tool in react.js</li>
+            </ul>
+          </div>
+          <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+            <h3>UI Engineer <span class="highlight">@ F1Studioz</span></h3>
+            <h4>Jul 2016 - Feb 2018</h4>
+            <ul>
+              <li>Client side development of javascript apps using Html/Css,JQuery,Angular,React etc.</li>
+              <li>Conversion of design files to pixel perfect web pages</li>
+              <li>Debugging & Bug fixing for a Barclays investment saver app and Sony Abudhabi Video Editor in AngularJs
+              </li>
+              <li>Building Highway toll management application using Angular2.0</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="projects py-20 mb-30">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-11">
+        <div class="row project-content">
+          <div class="navbar navbar-expand-sm">
+            <div class="section-header align-items-center  col-md-6 offset-md-6 text-right justify-content-end">
+              <div class="line"></div>
+              <h2>Few things I built</h2>
+            </div>
+            <div class="nav">
+              <a class="nav-link active" href="#schema-sort" role="tab" aria-controls="schema-sort"
+                aria-selected="true">Graphql Sort</a>
+              <a class="nav-link" href="#grep-cloud" role="tab" aria-controls="grep-cloud"
+                aria-selected="false">Grepcloud website</a>
+              <a class="nav-link" href="#fifa-scores" role="tab" aria-controls="fifa-scores" aria-selected="false">Fifa
+                Scores</a>
+              <a class="nav-link" href="#splitbit" role="tab" aria-controls="fifa-scores" aria-selected="false">Splitbit
+                website</a>
+            </div>
+          </div>
+          <div class="col-md-7">
+            <div class="content">
+              <div class="tab-pane" id="schema-sort">
+                <div class="tab-content">
+
+                <h3>GraphQl Schema Sort</h3>
+                <p>Its an VSCode extension built with the aim to sort the GraphQL schema</br> alphabetically.</p>
+                <ul>
+                  <li>
+                    <img src="images/download.svg" /><span class="highlight">1000+</span> Downloads
+                  </li>
+                  <li>
+                    Available at <a class="highlight"
+                      href="https://marketplace.visualstudio.com/items?itemName=Splitbitio.gqlsort#review-details">VS
+                      Code marketspace</a>
+                  </li>
+                </ul>
+                <div class="tech-used-cont">
+                  <h4>Made with</h4>
+                  <div class="tech-used">
+                    <div class="tech">
+                      <img src="images/node.svg" />
+                      <h5>node.js</h5>
+                    </div>
+                    <div class="tech">
+                      <img src="images/typescript.svg" />
+                      <h5>typescript</h5>
+                    </div>
+                  </div>
+
+                </div>
+                <img src="https://raw.githubusercontent.com/Viping7/GraphQL-Sorter-VSCode/main/sort.gif" />
+                </div>
+              </div>
+              <div class="tab-pane website" id="grep-cloud">
+                <div class="tab-content">
+                  <h3>Grepcloud website</h3>
+                  <p>A website designed and built for an agency that wanted to project a modern outlook
+                  </p>
+                  <ul>
+                    <li>
+                      Explore website <a class="highlight"
+                        href="https://marketplace.visualstudio.com/items?itemName=Splitbitio.gqlsort#review-details">here</a>
+                    </li>
+                  </ul>
+                  <div class="tech-used-cont">
+                    <h4>Made with</h4>
+                    <div class="tech-used">
+                      <div class="tech">
+                        <img src="images/html.svg" />
+                        <h5>html</h5>
+                      </div>
+                      <div class="tech">
+                        <img src="images/css.svg" />
+                        <h5>css3</h5>
+                      </div>
+                      <div class="tech">
+                        <img src="images/js.svg" />
+                        <h5>javascript</h5>
+                      </div>
+                      <div class="tech">
+                        <img src="images/jquery.svg" />
+                        <h5>jquery</h5>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="img-cont">
+
+                    <img src="images/img-3.png" class="img-1" />
+                    <img src="images/img-4.png" class="img-1" />
+                    <div class="connecting-line line-1"></div>
+                    <div class="connecting-line line-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="fifa-scores">
+                <div class="tab-content">
+
+                <h3>FIFA Scores</h3>
+                <p>This extention was built to enjoy the FIFA world cup Qatar while <br /> doing what we all love. <span
+                    class="highlight"><b>Coding!!</b></span>
+                </p>
+                <ul>
+                  <li>
+                    <img src="images/download.svg" /><span class="highlight">500+</span> Downloads
+                  </li>
+                  <li>
+                    Available at <a class="highlight"
+                      href="https://marketplace.visualstudio.com/items?itemName=Splitbitio.fifa">VS Code marketspace</a>
+                  </li>
+                </ul>
+                <div class="tech-used-cont">
+                  <h4>Made with</h4>
+                  <div class="tech-used">
+                    <div class="tech">
+                      <img src="images/node.svg" />
+                      <h5>node.js</h5>
+                    </div>
+                    <div class="tech">
+                      <img src="images/typescript.svg" />
+                      <h5>typescript</h5>
+                    </div>
+                  </div>
+
+                </div>
+                <img src="https://fifa-scores-assets.s3.ap-south-1.amazonaws.com/fifa-score.gif" />
+                </div>
+              </div>
+              <div class="tab-pane website splitbit" id="splitbit">
+                <div class="tab-content">
+
+                <h3>Grepcloud website</h3>
+                <p>A website designed and built for an agency that wanted to project a modern outlook
+                </p>
+                </ul>
+                <div class="tech-used-cont">
+                  <h4>Made with</h4>
+                  <div class="tech-used">
+                    <div class="tech">
+                      <img src="images/html.svg" />
+                      <h5>html</h5>
+                    </div>
+                    <div class="tech">
+                      <img src="images/css.svg" />
+                      <h5>css3</h5>
+                    </div>
+                    <div class="tech">
+                      <img src="images/js.svg" />
+                      <h5>javascript</h5>
+                    </div>
+                    <div class="tech">
+                      <img src="images/jquery.svg" />
+                      <h5>jquery</h5>
+                    </div>
+                  </div>
+
+                </div>
+                <div class="img-cont">
+
+                  <img src="images/sb-img-1.png" class="splitbit-img-1" />
+                  <img src="images/sb-img-2.png" class="splitbit-img-2" />
+                  <div class="connecting-line line-1"></div>
+                  <div class="connecting-line line-2"></div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="other-projects py-20 mb-30">
+  <div class="container">
+    <div class="row">
+      <div class="section-header align-items-center">
+        <h2>A few more older projects</h2>
+        <div class="line"></div>
+      </div>
+      <div class="col-md-12">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header">
+                    <img src="images/folder-icon.svg" class="folder">
+                    <div class="links">
+                      <a href="https://github.com/Viping7/tyle" target="_blank"><img src="images/github.svg"/></a>
+                      <a href="https://www.npmjs.com/package/tyle"  target="_blank"><img src="images/npm.svg" class="npm"/></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Tyle</h3>
+                    <p>A typeform like transition plugin aimed specifically for multiple choice surveys and questions</p>
+                    </div>
+                    <div class="card-footer">
+                    <ul>
+                      <li>html</li>
+                      <li>css3</li>
+                      <li>jquery</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header">
+                    <img src="images/folder-icon.svg" class="folder">
+                    <div class="links">
+                      <a href="https://github.com/Viping7/Angular-CLI-HMR"  target="_blank"><img src="images/github.svg"/></a>
+                      <a href="https://www.npmjs.com/package/angular-cli-hmr"  target="_blank"><img src="images/npm.svg" class="npm"/></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Angular cli hmr</h3>
+                    <p>A Hot Module Replacement (HMR) feature for angular 2 app using vanilla angular CLI</p>
+                    </div>
+                    <div class="card-footer">
+                    <ul>
+                      <li>Angular</li>
+                      <li>Webpack</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header">
+                    <img src="images/folder-icon.svg" class="folder">
+                    <div class="links">
+                      <a href="https://github.com/Viping7/route-er" target="_blank"><img src="images/github.svg"/></a>
+                      <a href="https://www.npmjs.com/package/route-er" target="_blank"><img src="images/npm.svg" class="npm"/></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Route-er</h3>
+                    <p>A package that enables you to decouple your routes from controllers and organise all routes in a single place for your express.js app
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                    <ul>
+                      <li>Nodejs</li>
+                      <li>Express.js</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header">
+                    <img src="images/folder-icon.svg" class="folder">
+                    <div class="links">
+                      <a href="https://github.com/Viping7/AdSkipper" target="_blank"><img src="images/github.svg"/></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Remote Mouse Controller (Ad Skipper)</h3>
+                    <p>An electron + ionic app which allows you to control mouse remotely using your phone
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                    <ul>
+                      <li>Nodejs</li>
+                      <li>Elecron</li>
+                      <li>Ionic</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header">
+                    <img src="images/folder-icon.svg" class="folder">
+                    <div class="links">
+                      <a href="https://github.com/Viping7/codex" target="_blank"><img src="images/github.svg"/></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Codex</h3>
+                    <p>A multi framework convertor that converts React.js code to Angular
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                    <ul>
+                      <li>Nodejs</li>
+                      <li>Express.js</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                  <div class="card-header">
+                    <img src="images/folder-icon.svg" class="folder">
+                    <div class="links">
+                      <a href="https://github.com/Viping7/logger.js" target="_blank"><img src="images/github.svg"/></a>
+                      <a href="https://www.npmjs.com/package/advanced-node-logger" target="_blank"><img src="images/npm.svg" class="npm"/></a>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <h3>Advanced node logger</h3>
+                    <p>A nodejs Logger plugin, which gives option to write logs to 3 different destinations, to console, to a file and a mongo database 
+                    </p>
+                    </div>
+                    <div class="card-footer">
+                    <ul>
+                      <li>Nodejs</li>
+                      <li>Express.js</li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+{% endblock %}
