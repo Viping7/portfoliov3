@@ -25,6 +25,7 @@
     p{
         font-size: 16px;
         line-height: 30px;
+        margin-bottom: 30px;
     }
 }
 @supports (background: paint(houdini)) {
@@ -424,15 +425,26 @@
       background-color: transparent;
       border-bottom: none;
       .folder{
-        width: 20px;
+        width: 22px;
       }
       .links{
         a{
           margin: 0px 8px;
-          img{
-            width: 18px;
-            &.npm{
-              width: 30px;
+          svg{
+            path{
+              fill:rgba($color-black,0.5)
+            }
+          }
+          &:hover{
+            svg{
+              path{
+                fill: #000;
+              }
+              &.npm{
+                path{
+                  fill:#CB3837
+                }
+              }
             }
           }
         }
@@ -465,5 +477,13 @@
         }
       }
     }
+  }
+}
+.contact{
+  h6{
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
 }

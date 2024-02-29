@@ -15,21 +15,17 @@ $(document).ready(function() {
         }
         $('.banner').css({opacity:opacity,transform:transform})
         const projectTop = $('.projects').position().top;
-        const projectEnd = $('.other-projects').position().top;
+        // const projectEnd = $('.other-projects').position().top;
+        const projectEnd = $('#splitbit').offset().top + 500;
         if(scrollTop >= projectTop-20){
             $('.navbar').addClass('sticky-top')
         }else{
             $('.navbar').removeClass('sticky-top')
         }
-        console.log(projectEnd,scrollTop)
-        if(scrollTop >=projectEnd-500){
-            $('.navbar').css({opacity:0})
+        if(scrollTop<=projectEnd){
+            $('.navbar').fadeIn()
+        }else{
+            $('.navbar').fadeOut()
         }
-        // if(projectTop/1.4 <= scrollTop){
-        //     $('.fixed-section').css({'position':'fixed'})
-        // }else{
-        //     $('.fixed-section').css({'position':'static'})
-
-        // }
       });
 });
