@@ -96,7 +96,7 @@
         display: flex;
         img{
             width: 100%;
-            border: 20px solid rgba(90, 88, 89,0.3);
+            border: 20px solid rgba($color-black,0.06);
             border-radius: 20px;
         }
     }
@@ -303,7 +303,7 @@
               }
               &.line-2{
                 bottom:210px;
-                height: 285px;
+                height: 325px;
                 width: 2px;
                 right: -50px;
                 border-right: 1px dashed rgba($base-color,0.5);
@@ -482,8 +482,9 @@
 .contact{
   h6{
     font-weight: 400;
-    line-height: 25px;
-    margin-top: 0px;
+    line-height: 30px;
+    margin-top: 30px;
     margin-bottom: 40px;
+    font-size: 16px;
   }
 }
