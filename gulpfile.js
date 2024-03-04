@@ -20,12 +20,12 @@ const babel = require('gulp-babel');
 // */
 
 // Optimise Images
-function imageMin(cb) {
-    gulp.src("src/assets/images/*")
-        .pipe(imagemin())
-        .pipe(gulp.dest("dist/images"));
-    cb();
-}
+// function imageMin(cb) {
+//     gulp.src("src/assets/images/*")
+//         .pipe(imagemin())
+//         .pipe(gulp.dest("dist/images"));
+//     cb();
+// }
 
 // Copy all HTML files to Dist
 function copyHTML(cb) {
@@ -57,6 +57,7 @@ function js(cb) {
         .pipe(gulp.dest("dist/js"));
     cb();
 }
+
 
 // Compile Sass
 function css(cb) {
@@ -117,7 +118,7 @@ function watch_files() {
 }
 
 // Default 'gulp' command with start local server and watch files for changes.
-exports.default = series(nunjucks, css, js, imageMin, watch_files);
+exports.default = series(nunjucks, css, js, watch_files);
 
 // 'gulp build' will build all assets but not run on a local server.
-exports.build = parallel(nunjucksMinify, css, js, imageMin);
+exports.build = parallel(nunjucksMinify, css, js);
