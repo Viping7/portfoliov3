@@ -1,5 +1,7 @@
 let ts;
 $(document).ready(function() {
+    $('body').removeClass('no-scroll');
+    $('.loader').remove();
     $('.experience .nav-link').click(function(){
         if($(window).width()<600){
             const left = $(this).position().left

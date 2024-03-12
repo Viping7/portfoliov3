@@ -134,3 +134,24 @@ p{
         transition:all 0.25s;
       }
 }
+.loader{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow: hidden;
+    
+    pointer-events: none;
+}
+.no-scroll{
+    overflow: hidden;
+    height: 100vh;
+    pointer-events: none;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+      }
+}
