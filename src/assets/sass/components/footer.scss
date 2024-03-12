@@ -16,7 +16,7 @@ footer{
             height: 22px;
         }
         ul{
-            display: inline-block;
+            display: flex;
             li{
                 display: inline-block;
                 margin: 0px 10px;
@@ -55,5 +55,18 @@ footer{
                 }
             }
         }
+        @media screen and (max-width:768px) {
+            ul{
+                li{
+                    margin: 0 5px;
+                }
+            }
+        }
+        @media screen and (max-width:500px) {
+            ul{
+               margin-top: 20px;
+            }
+        }
+        
     
 }

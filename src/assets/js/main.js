@@ -1,8 +1,17 @@
+let ts;
 $(document).ready(function() {
     $('.experience .nav-link').click(function(){
-        const top = $(this).position().top
-        $('.tab-selector').css({top:top});
+        if($(window).width()<600){
+            const left = $(this).position().left
+            $('.tab-selector').css({left:left});
+        }else{
+            const top = $(this).position().top
+            $('.tab-selector').css({top:top});
+        }
     })
+    $(document).bind('touchstart', function(e) {
+        ts = e.originalEvent.touches[0].clientY;
+    });
     $(window).on( "scroll", function() {
         const top = $(".dummy-banner").next().position().top;
         const scrollTop = $(window).scrollTop();
@@ -32,6 +41,17 @@ $(document).ready(function() {
             $('.navbar').fadeOut()
         }
       });
+    
+   
+    $(document).bind('touchmove', function(e) {
+        var te = e.originalEvent.changedTouches[0].clientY;
+        if (ts > te) {
+            $('footer').fadeOut();
+        } else {
+            $('footer').fadeIn();
+        }
+    });
+   
 });
 
 function setActive(ele,scrollPos){
