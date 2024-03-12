@@ -71,6 +71,9 @@ body {
 }
 .mb-30{
     margin-bottom: 80px;
+    @media screen and (max-width:600px) {
+        margin-bottom: 30px;
+      }
 }
   
 h3{

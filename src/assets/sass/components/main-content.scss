@@ -787,6 +787,10 @@
          
         }
       }
+
+      .nav {
+        flex-wrap: nowrap;
+      }
       .sticky-top {
         position: fixed;
         right: auto;
@@ -794,9 +798,6 @@
         left: 0px;
         top: 0px;
 
-        .nav {
-          flex-wrap: nowrap;
-        }
       }
 
     }
