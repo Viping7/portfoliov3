@@ -6,7 +6,7 @@
   --opacity: 1;
 }
 
-@supports (background: paint(houdini)) {
+// @supports (background: paint(houdini)) {
   @property --opacity {
     syntax: "<number>";
     initial-value: 1;
@@ -30,7 +30,7 @@
       --angle: 360deg;
     }
   }
-}
+// }
 
 .banner {
   position: fixed;
@@ -111,6 +111,7 @@
         width: 100%;
         border: 20px solid rgba($color-black, 0.06);
         border-radius: 20px;
+        position: relative;
       }
 
       &:nth-child(2) {
